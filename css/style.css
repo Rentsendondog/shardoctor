@@ -9,161 +9,97 @@
 
 
 body {
-    /* background: rgb(247, 151, 28);
-    background: radial-gradient(circle, rgba(247, 151, 28, 0.42) 0%, rgba(249, 199, 21, 0.9220063025210083) 0%, rgba(255, 138, 0, 0.88) 100%);
-
-    background: rgb(249, 199, 21);
-    background: linear-gradient(90deg, rgba(249, 199, 21, 0.9220063025210083) 15%, rgba(255, 138, 0, 0.88) 70%); */
     font-family: 'Poppins', sans-serif;
     line-height: 1.8rem;
 }
+
 /* main container */
 .container-body {
     z-index: 0;
     background: #FFFFFF;
-    border: 1px solid #000000;
-    height: 6000px;
 }
 
 /* tolbo 1 */
 .stain {
     position: absolute;
-    width: 467px;
-    height: 303px;
-    left: 583px;
-    top: -190px;
+    width: 30rem;
+    height: 18rem;
+    left: 36rem;
+    top: -12rem;
     z-index: 1;
     background: linear-gradient(270deg, #FF0404 2.36%, rgba(247, 117, 84, 0) 100%);
-    filter: blur(125px);
-    /* background: linear-gradient(270deg, #FF8E00 2.36%, rgba(247, 117, 84, 0) 100%);
-    filter: blur(125px); */
+    filter: blur(7rem);
 }
 
 /* tolbo 2 */
 .stain-2 {
-    width: 517px;
-    height: 515px;
-    left: -210px;
-    top: 550px;
+    width: 32rem;
+    height: 32rem;
+    left: -13rem;
+    top: 32rem;
     background: linear-gradient(270deg, #FF8E00 2.36%, rgba(247, 117, 84, 0) 100%);
-    filter: blur(125px);
+    filter: blur(7rem);
 }
 
 /* tolbo 3 */
 .stain-3 {
-    width: 466px;
-    height: 412px;
-    left: 1200px;
-    top: 575px;
+    width: 32rem;
+    height: 25rem;
+    left: 75rem;
+    top: 35rem;
     background: linear-gradient(270deg, #990EE5 2.36%, rgba(247, 117, 84, 0) 100%);
-    filter: blur(125px);
-    /* background: linear-gradient(270deg, #FF8E00 2.36%, rgba(247, 117, 84, 0) 100%);
-    filter: blur(125px); */
+    filter: blur(7rem);
 }
 
 /* logo */
 .logo {
     width: 100px;
     height: 100px;
-    /* margin-right: 3rem; */
+    margin-left: 3rem;
+    cursor: pointer;
 }
 
+.pro {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+
+/* utility classes style */
 a {
     text-decoration: none;
+    color: #000;
 }
 
 p {
     margin: 0.75rem 0;
 }
 
-/* utility classes style */
-.container {
+
+/* .container {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
-    /* overflow: hidden; */
-}
+    overflow: hidden;
+} */
 
 /* Бүх үсэг нь Том үсэг */
-.upper {
+/* .upper {
     text-transform: uppercase;
-}
+} */
 
-/* Том хэмжээтэй үсэг */
-.l-heading {
-    font-size: 6.9rem;
-    font-weight: 450;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-}
-
-.sm-heading {
-    font-size: 3.5rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-}
-
-.m-heading {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-    color: #000000;
-}
-
-.weight {
-    font-weight: 600px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.lead {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-}
-
-.bg-primary {
+/* .bg-primary {
     background: linear-gradient(180deg, #FFFFFF 0%, #FF4D00 100%);
-}
+} */
 
-.bg-second {
+/* .bg-second {
     background: linear-gradient(180deg, #FFFFFF 0%, #FF00F0 100%);
-}
-
-.py-1 {padding: 1.5rem 0;}
-.py-2 {padding: 2rem 0;}
-.py-3 {padding: 3rem 0;}
-
-.p-1 {padding: 1.5rem;}
-.p-2 {padding: 2rem;}
-.p-3 {padding: 3rem;}
-
-.my-1 {margin: 1.5rem 0;}
-.my-2 {margin: 2rem 0;}
-.my-3 {margin: 3rem 0;}
-
-.m-1 {margin: 1rem;}
-.m-1a5 {margin: 1.5rem;}
-.m-2 {margin: 2rem;}
-.m-3 {margin: 3rem;}
-
-.mb-1 {margin-bottom: 1rem;}
-.mb-2{margin-bottom: 2rem;}
-.mb-2a5 {margin-bottom: 2.5rem;}
-.mb-3 {margin-bottom: 3rem;}
-.mb-5 {margin-bottom: 5rem;}
+} */
 
 
-
-
-.list {
-    margin: 0.5rem;
-    list-style: none;
-}
-
-.btn {
+/* .btn {
     display: inline-block;
     border-radius: 30px;
     color: #000;
@@ -171,57 +107,57 @@ p {
     margin: 0 2rem;
     border: none;
     cursor: pointer;
-}
+} */
 
 /* Navbar */
 #navbar {
-    z-index: 2;
     position: relative;
-    width: 90%;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-around;
-    /* background: #fff; */
-    color: #000;
-    margin: auto;
-    padding: 1rem 0;
-    cursor: pointer;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
 }
+
 
 #navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
+   margin: 1rem;
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-gap: 1rem;
+   font-size: 1.5rem;
 }
 
-#navbar ul li a {
+#navbar ul li {
+    padding: 1.5rem;
+    /* border: 1px solid #ccc; */
+    /* background: #f4f4f4; */
+    text-align: center; 
+}
+
+
+
+/* #navbar ul {
+    
+} */
+
+/* #navbar ul li a {
     color: #000;
     padding: 0.75rem;
     margin: 0 2rem;
-}
+} */
 
 /* Profile */
-.pro{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px #000 solid;
-}
+
 
 /* Showcase Header */
-#showcase .showcase-content {
+/* #showcase .showcase-content {
     position: relative;
-    top: 200px;
+    top: 200px; */
     /* font-weight: 300; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     padding: 0 2rem;
     color: #000;
-}
-
-.col-2 {
-    display: flex;
-    justify-content: space-between;
-}
+}  */
